@@ -1,0 +1,11 @@
+--cpu=Cortex-M33
+".\objects\startup_cm3031.o"
+".\objects\system_cm3031.o"
+".\objects\main_ns.o"
+".\objects\retarget.o"
+"..\..\Secure\lib\nsclib_Secure.o"
+".\objects\gpio.o"
+--library_type=microlib --strict --scatter "nonsecure.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals
+--list ".\Listings\Nonsecure.map" -o .\Objects\Nonsecure.axf
