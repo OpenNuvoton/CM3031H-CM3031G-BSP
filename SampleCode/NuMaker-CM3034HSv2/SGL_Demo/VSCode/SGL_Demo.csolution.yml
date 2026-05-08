@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.6.0
+  created-for: CMSIS-Toolbox@2.7.0
+  compiler: AC6
+  target-types:
+    - type: SGL_Demo
+      device: CM3034HS8AE
+      optimize: size
+  projects:
+    - project: SGL_Demo.cproject.yml
