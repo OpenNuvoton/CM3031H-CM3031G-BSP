@@ -1,0 +1,115 @@
+#! armclang -E --target=arm-arm-none-eabi -mcpu=cortex-m33 -xc
+;
+; 可选：程序主体在片内 Flash，将大图片 .o 的 RO 放到「外置 SPI Flash」链接区（需 XIP 或独立烧录镜像）。
+;
+; 用法说明（必读）：
+; 1) 本文件把 instrument-bag.c / nuvoton_logo.c 编译出的 .o 中只读数据放到单独 load region（无 landscape.c）。
+; 2) LR_SPI_ASSETS 的 load base 设为 0：生成外置 SPI Flash 镜像时，通常从偏移 0 开始对应这片 RO。
+; 3) ER_SPIFLASH 的 exec base 默认为 SPIFLASH_EXEC_BASE：必须是芯片「QSPI/SPI 映射到总线」的 XIP 地址，
+;    否则 CPU 无法直接通过指针读数组；请按 CM3031 数据手册里 XIP 窗口修改 SPIFLASH_EXEC_BASE，
+;    或在 Keil C/C++ Misc controls 里加：-DSPIFLASH_EXEC_BASE=0x你的地址
+; 4) 若外置 SPI 仅通过普通 SPI 读（无 XIP），链接器无法让 C 直接访问 0x9xxxxxxx 这类地址——
+;    此时不要用本 ER 的 exec 地址跑程序，应改为运行时 SPI 读 + 缓冲，或仅把本区当「独立 bin」烧录。
+;
+
+#ifndef FLASH_SIZE
+    #define FLASH_SIZE      0x00002000
+#endif
+
+#ifndef SRAM_SIZE
+    #define SRAM_SIZE       0x00050000
+#endif
+
+#ifndef STACK_SIZE
+    #define STACK_SIZE      0x00001000
+#endif
+
+#ifndef HEAP_SIZE
+    #define HEAP_SIZE       0x00000100
+#endif
+
+/* 外部 SPI Flash 映射（执行地址 / XIP）。务必与硬件一致。 */
+#ifndef SPIFLASH_EXEC_BASE
+#define SPIFLASH_EXEC_BASE     0x90000000
+#endif
+#ifndef SPIFLASH_MAX_SIZE
+#define SPIFLASH_MAX_SIZE      0x01000000
+#endif
+
+/* 片内 Flash（与 LDROM.sct 一致；与 Keil 目标存储器一致时请自行核对） */
+#define __FLASH_BASE        0x0F100000
+#define __FLASH_SIZE        FLASH_SIZE
+
+#define __SRAM_BASE         0x20000000
+#define __SRAM_SIZE         SRAM_SIZE
+
+#define __STACK_SIZE        STACK_SIZE
+#define __HEAP_SIZE         HEAP_SIZE
+
+#if defined (__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U)
+#define __STACKSEAL_SIZE   ( 8 )
+#else
+#define __STACKSEAL_SIZE   ( 0 )
+#endif
+
+#define __STACK_TOP    (__SRAM_BASE + __SRAM_SIZE - __STACKSEAL_SIZE)
+#define __HEAP_BASE    (AlignExpr(+0, 8))
+
+#define __RO_BASE          ( __FLASH_BASE )
+#define __RO_SIZE          ( __FLASH_SIZE )
+
+#define __RW_BASE          ( __SRAM_BASE )
+#define __RW_SIZE          ( __SRAM_SIZE - __STACK_SIZE - __HEAP_SIZE )
+
+/* --------------------------------------------------------------------------
+   外部 SPI Flash：先匹配图片对象，避免进入片内 ER_ROM
+   Load region base = 0：外置烧录文件通常从 0 偏移开始铺 RO
+   Exec region = SPIFLASH_EXEC_BASE：XIP 时 CPU 访问地址
+   -------------------------------------------------------------------------- */
+LR_SPI_ASSETS 0x00000000 SPIFLASH_MAX_SIZE
+{
+    ER_SPIFLASH SPIFLASH_EXEC_BASE SPIFLASH_MAX_SIZE
+    {
+        instrument-bag.o (+RO)
+        nuvoton_logo.o (+RO)
+    }
+}
+
+/* 片内：代码 + 其余只读 */
+LR_ROM __RO_BASE __RO_SIZE
+{
+    ER_ROM __RO_BASE __RO_SIZE
+    {
+        *.o (RESET, +First)
+        *(InRoot$$Sections)
+
+        *(+RO)
+        *(+XO)
+        *(.rodata*)
+        *(.constdata*)
+
+        .ANY (+RO)
+        .ANY (+XO)
+    }
+
+    RW_RAM __RW_BASE __RW_SIZE
+    {
+        .ANY (+RW +ZI)
+    }
+
+#if __HEAP_SIZE > 0
+    ARM_LIB_HEAP  __HEAP_BASE EMPTY  __HEAP_SIZE
+    {
+    }
+#endif
+
+    ARM_LIB_STACK __STACK_TOP EMPTY - __STACK_SIZE
+    {
+    }
+
+#if defined (__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U)
+    STACKSEAL +0 EMPTY __STACKSEAL_SIZE
+    {
+    }
+#endif
+}
