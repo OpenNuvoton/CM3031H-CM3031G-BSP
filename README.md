@@ -48,7 +48,7 @@ To experience the powerful features of CM3031 in few minutes, please select the 
 	Sample codes for In-System-Programming.
 	
 - NuMaker-CM3034HSv2<br>
-	Sample codes for NuMaker-M3334KIv2 board.
+	Sample codes for NuMaker-M3034HSv2 board.
 
 - PowerManagement<br>
 	Power management sample code.
@@ -75,6 +75,15 @@ To experience the powerful features of CM3031 in few minutes, please select the 
 
 - LibMAD<br>
 	A MPEG audio decoder library that currently supports MPEG-1 and the MPEG-2 extension to lower sampling frequencies, as well as the de facto MPEG 2.5 format.
+
+- emWin_light<br>
+	A lightweight embedded graphics library optimized for resource-constrained systems.	An open source FAT/exFAT filesystem library.	
+
+- LVGL<br>	
+	An open-source graphics library for embedded systems, providing modern GUI components and touch support.
+	
+- SGL<br>	
+A lightweight graphics library designed for embedded GUI and dashboard applications.
 
 # License
 
