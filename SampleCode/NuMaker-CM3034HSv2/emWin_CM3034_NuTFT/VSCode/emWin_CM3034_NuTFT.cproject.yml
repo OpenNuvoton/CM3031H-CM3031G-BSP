@@ -12,11 +12,10 @@ project:
         - ../Config
         - ../Board
         - ../Application
-        - ../ThirdParty/emWin_V656/GUI/Core
-        - ../ThirdParty/emWin_V656/GUI/DisplayDriver
-        - ../ThirdParty/emWin_V656/GUI/Widget
-        - ../ThirdParty/emWin_V656/GUI/WM
-        - ../ThirdParty/emWin_V656/GUI/MemDev
+        - ../../../../../emWin_V656_Headers/GUI/Core
+        - ../../../../../emWin_V656_Headers/GUI/DisplayDriver
+        - ../../../../../emWin_V656_Headers/GUI/Widget
+        - ../../../../../emWin_V656_Headers/GUI/WM
       debug: "on"
       define:
         - __DEMO_320x240__

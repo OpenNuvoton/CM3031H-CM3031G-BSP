@@ -1,5 +1,13 @@
 set(EMWIN_DEMO_DIR ${CMAKE_CURRENT_LIST_DIR})
-set(EMWIN_GUI_DIR  ${EMWIN_DEMO_DIR}/ThirdParty/emWin_V656/GUI)
+# Matching emWin headers are supplied separately and stay outside this repository.
+set(EMWIN_GUI_DIR "${BSP_DIR}/../emWin_V656_Headers/GUI" CACHE PATH
+    "Path to the separately supplied emWin V6.56 GUI headers")
+if(NOT EXISTS "${EMWIN_GUI_DIR}/Core/GUI.h" OR
+   NOT EXISTS "${EMWIN_GUI_DIR}/DisplayDriver/GUIDRV_FlexColor.h")
+    message(FATAL_ERROR
+        "Matching emWin V6.56 headers are required. See this example's README.md "
+        "and set EMWIN_GUI_DIR to the external GUI header directory.")
+endif()
 
 add_library(emwin_cm3034_ac6 STATIC IMPORTED)
 set_target_properties(emwin_cm3034_ac6 PROPERTIES
@@ -11,7 +19,6 @@ target_include_directories(emwin_cm3034_ac6 INTERFACE
     ${EMWIN_GUI_DIR}/DisplayDriver
     ${EMWIN_GUI_DIR}/Widget
     ${EMWIN_GUI_DIR}/WM
-    ${EMWIN_GUI_DIR}/MemDev
 )
 
 create_project(emWin_CM3034_NuTFT

@@ -1,7 +1,5 @@
-# Restricted vendor implementation must never be committed.
-/ThirdParty/**/*.c
-/ThirdParty/**/*.cpp
-/ThirdParty/**/*.o
+# Vendor headers and implementations are provided separately.
+/ThirdParty/
 /Application/lcd/ILI9341.c
 
 # Private library rebuild scripts and intermediate files.

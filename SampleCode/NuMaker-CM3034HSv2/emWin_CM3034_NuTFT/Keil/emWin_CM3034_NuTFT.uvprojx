@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\..\Library\CMSIS\Core\Include;..\..\..\..\Library\Device\Nuvoton\cm3031\Include;..\..\..\..\Library\StdDriver\inc;..\Config;..\Board;..\Application;..\ThirdParty\emWin_V656\GUI\Core;..\ThirdParty\emWin_V656\GUI\DisplayDriver;..\ThirdParty\emWin_V656\GUI\Widget;..\ThirdParty\emWin_V656\GUI\WM;..\ThirdParty\emWin_V656\GUI\MemDev</IncludePath>
+              <IncludePath>..\..\..\..\Library\CMSIS\Core\Include;..\..\..\..\Library\Device\Nuvoton\cm3031\Include;..\..\..\..\Library\StdDriver\inc;..\Config;..\Board;..\Application;..\..\..\..\..\emWin_V656_Headers\GUI\Core;..\..\..\..\..\emWin_V656_Headers\GUI\DisplayDriver;..\..\..\..\..\emWin_V656_Headers\GUI\Widget;..\..\..\..\..\emWin_V656_Headers\GUI\WM</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
