@@ -130,6 +130,9 @@ void SYS_Init(void)
     /* Waiting for clock ready */
     CLK_WaitClockReady(CLK_STATUS_HIRCSTB_Msk);
 
+    /* Set core clock to 180MHz */
+    CLK_SetCoreClock(FREQ_180MHZ);
+    
     /* Select clock source of UART */
     CLK_SetModuleClock(UART0_MODULE, CLK_CLKSEL1_UART0SEL_HIRC, CLK_CLKDIV0_UART0(1));
 

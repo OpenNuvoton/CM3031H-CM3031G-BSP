@@ -182,8 +182,8 @@ int main(void)
     /* Unlock protected registers before setting power level and entering Idle mode */
     SYS_UnlockReg();
 
-    /* Set core clock as 160MHz from PLL */
-    CLK_SetCoreClock(160000000);
+    /* Set core clock as 180MHz from PLL */
+    CLK_SetCoreClock(180000000);
 
     /* Set power level to 1.1V */
     printf("Set power level to 1.1V ");

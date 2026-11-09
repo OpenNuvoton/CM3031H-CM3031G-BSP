@@ -24,7 +24,7 @@ extern "C" {
  *----------------------------------------------------------------------------*/
 
 #ifndef __HSI
-#define __HSI       (160000000UL)   /*!< PLL default output is 160MHz */
+#define __HSI       (180000000UL)   /*!< PLL default output is 180MHz */
 #endif
 
 #ifndef __HXT

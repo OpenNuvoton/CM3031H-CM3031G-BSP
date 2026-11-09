@@ -44,8 +44,8 @@ void SYS_Init(void)
     /* Set PCLK0 and PCLK1 to HCLK/2 */
     CLK->PCLKDIV = (CLK_PCLKDIV_APB0DIV_DIV2 | CLK_PCLKDIV_APB1DIV_DIV2);
 
-    /* Set core clock to 160MHz */
-    CLK_SetCoreClock(160000000);
+    /* Set core clock */
+    CLK_SetCoreClock(FREQ_180MHZ);
 
     /* Enable all GPIO clock */
     CLK->AHBCLK0 |= CLK_AHBCLK0_GPACKEN_Msk | CLK_AHBCLK0_GPBCKEN_Msk | CLK_AHBCLK0_GPCCKEN_Msk | CLK_AHBCLK0_GPDCKEN_Msk |
@@ -155,10 +155,10 @@ void EADC_FunctionTest(void)
             break;  /* exit while loop */
 
         /* Configure the sample module for analog input channel and software trigger source. */
-        EADC_ConfigSampleModule(EADC0, 0, EADC_SOFTWARE_TRIGGER, 6);
-        EADC_ConfigSampleModule(EADC0, 1, EADC_SOFTWARE_TRIGGER, 7);
-        EADC_ConfigSampleModule(EADC0, 2, EADC_SOFTWARE_TRIGGER, 8);
-        EADC_ConfigSampleModule(EADC0, 3, EADC_SOFTWARE_TRIGGER, 9);
+        EADC_ConfigSampleModule(EADC0, 0, EADC_SOFTWARE_TRIGGER, 0);
+        EADC_ConfigSampleModule(EADC0, 1, EADC_SOFTWARE_TRIGGER, 1);
+        EADC_ConfigSampleModule(EADC0, 2, EADC_SOFTWARE_TRIGGER, 2);
+        EADC_ConfigSampleModule(EADC0, 3, EADC_SOFTWARE_TRIGGER, 3);
 
         /* Clear the A/D ADINTx interrupt flag for safe */
         EADC_CLR_INT_FLAG(EADC0, EADC_STATUS2_ADIF0_Msk | EADC_STATUS2_ADIF1_Msk | EADC_STATUS2_ADIF2_Msk | EADC_STATUS2_ADIF3_Msk);

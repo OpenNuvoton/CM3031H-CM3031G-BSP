@@ -44,9 +44,8 @@ void SYS_Init(void)
     /* Wait for HIRC clock ready */
     CLK_WaitClockReady(CLK_STATUS_HIRCSTB_Msk);
 
-    /* Set core clock to 96MHz */
-    CLK_SetCoreClock(96000000);
-
+    /* Set core clock to 180MHz */
+    CLK_SetCoreClock(FREQ_180MHZ);
 
     /* Enable UART peripheral clock */
     CLK_EnableModuleClock(UART0_MODULE);

@@ -52,7 +52,7 @@ int32_t EADC_Open(EADC_T *eadc, uint32_t u32InputMode)
 
     /* Check EADC clock frequency must not faster than PCLK */
     u32APB1Div = ((CLK->PCLKDIV & CLK_PCLKDIV_APB1DIV_Msk) >> CLK_PCLKDIV_APB1DIV_Pos);
-    if(eadc == EADC0)
+    if((eadc == EADC0)&&(((CLK->CLKSEL0&CLK_CLKSEL0_EADC0SEL_Msk)>>CLK_CLKSEL0_EADC0SEL_Pos)==0))
     {
         if(u32APB1Div > ((CLK->CLKDIV0 & CLK_CLKDIV0_EADC0DIV_Msk) >> CLK_CLKDIV0_EADC0DIV_Pos))
         {
