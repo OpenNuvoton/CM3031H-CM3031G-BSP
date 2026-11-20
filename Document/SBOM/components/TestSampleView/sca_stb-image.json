@@ -1,0 +1,71 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:stb-image",
+      "name": "stb_image",
+      "properties": [
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:identity-review-status",
+          "value": "source-declaration-only"
+        },
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl/src/libs/gltf/stb_image"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "1"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "source-based-assessment"
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/lvgl/src/libs/gltf/stb_image/stb_image.h (trailing license block)"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "ThirdParty/lvgl/src/libs/gltf/stb_image/stb_image.h (source header)"
+        },
+        {
+          "name": "bsp:software-name",
+          "value": "stb_image"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fdc89e14720056787c2ae836f9c889aa01ff13a08190f8103add6a353a4be7dc"
+        }
+      ],
+      "version": "2.30",
+      "licenses": [
+        {
+          "expression": "MIT OR Unlicense"
+        }
+      ]
+    }
+  ]
+}

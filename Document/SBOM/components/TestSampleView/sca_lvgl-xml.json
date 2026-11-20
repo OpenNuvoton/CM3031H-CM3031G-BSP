@@ -1,0 +1,61 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:lvgl-xml",
+      "name": "LVGL XML support",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bfde361f9a0da98648f1fe420955fe2f935b685aad92ff7cbf6bfc64c54069f0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl/src/others/xml"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "71"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "根据实际文件核对独立许可条款。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        }
+      ]
+    }
+  ]
+}

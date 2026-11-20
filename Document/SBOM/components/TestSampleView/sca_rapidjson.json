@@ -1,0 +1,62 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:rapidjson",
+      "name": "RapidJSON",
+      "properties": [
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:identity-review-status",
+          "value": "source-declaration-only"
+        },
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl/src/libs/thorvg/rapidjson"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "38"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "ThirdParty/lvgl/src/libs/thorvg/rapidjson/rapidjson.h"
+        },
+        {
+          "name": "bsp:license-observation",
+          "value": "MIT declaration in rapidjson.h; full embedded subtree including possible additional notices remains under review."
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e5710191aa79919e496a51e70764917c7ff180279f31043d7cc8635844dde040"
+        }
+      ],
+      "version": "1.1.0"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "components": [
+    {
+      "type": "file",
+      "bom-ref": "cm3031:stb-rect-pack",
+      "name": "ThirdParty/lvgl/src/libs/tiny_ttf/stb_rect_pack.h",
+      "properties": [
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:identity-review-status",
+          "value": "source-declaration-only"
+        },
+        {
+          "name": "bsp:file-path",
+          "value": "ThirdParty/lvgl/src/libs/tiny_ttf/stb_rect_pack.h"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "source-based-assessment"
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/lvgl/src/libs/tiny_ttf/stb_rect_pack.h (trailing license block)"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "ThirdParty/lvgl/src/libs/tiny_ttf/stb_rect_pack.h (source header)"
+        },
+        {
+          "name": "bsp:software-name",
+          "value": "stb_rect_pack"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a77b5e58de68d892c0c880ff62f6de7a7a669503cf04fa6cd0af7492e149c413"
+        }
+      ],
+      "version": "1.01",
+      "licenses": [
+        {
+          "expression": "MIT OR Unlicense"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:libmad",
+      "name": "LibMAD",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "179dfc3758d1434ebf68f5c7b745d57c204471fd1214e2438de8b3fdc7d00a1d"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/LibMAD"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "31"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "已见 GPL 第2版或后续版本声明；核对完整许可材料。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "ThirdParty/LibMAD/inc/version.h"
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/LibMAD/inc/version.h"
+        }
+      ],
+      "version": "0.15.1 (beta)",
+      "supplier": {
+        "name": "Underbit Technologies, Inc."
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ]
+    }
+  ]
+}

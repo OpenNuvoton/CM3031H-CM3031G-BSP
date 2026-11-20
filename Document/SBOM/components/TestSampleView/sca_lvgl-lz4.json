@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:lvgl-lz4",
+      "name": "LVGL lz4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4c94be6478998087919a123d03504e5a7f57f5c54488a9af5dfa7cf9b31b0c3d"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl/src/libs/lz4"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "2"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "先按实际目录分组；需区分内嵌实现、接口封装和外部依赖。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "source-based-assessment"
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/lvgl/src/libs/lz4/lz4.c; ThirdParty/lvgl/src/libs/lz4/lz4.h"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Based on inspected accompanying source license declarations; full directory, wrapper and resource licensing review remains pending."
+        },
+        {
+          "name": "bsp:license-review-status",
+          "value": "needs-review"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    }
+  ]
+}

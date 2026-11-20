@@ -1,0 +1,72 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:lvgl-ft800-ft813",
+      "name": "LVGL FT800-FT813",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c66e45854382761aba5ab1200e5eec3ae241e903602ea5d501a48da8ce34a4ec"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl/src/libs/FT800-FT813"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "9"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "先按实际目录分组；需区分内嵌实现、接口封装和外部依赖。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/lvgl/src/libs/FT800-FT813/LICENSE"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  ]
+}

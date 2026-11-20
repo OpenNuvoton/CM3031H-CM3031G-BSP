@@ -1,0 +1,75 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:cmsis-dsp",
+      "name": "CMSIS-DSP headers",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f8c21d7842ff71f99b83e743b4f4d8f77ebac9bc97fe67e2919cbeab65a75904"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "Library/CMSIS-DSP"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "48"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "独立发布版本尚未确认；不从 CMSIS 总体版本推定。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "Library/CMSIS-DSP/LICENSE"
+        }
+      ],
+      "supplier": {
+        "name": "Arm Limited"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    }
+  ]
+}
