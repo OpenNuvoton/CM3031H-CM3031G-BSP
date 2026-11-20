@@ -1,0 +1,84 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:emwin-light",
+      "name": "emWin light",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "89ac5b76c6bb9e1f23c6159e9dd5b2ae6238393919cb41dd383b8916e45b97f8"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/emWin_light"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "15"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "版本依据为头文件；尚未验证三个预编译库版本及随包 EULA。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "ThirdParty/emWin_light/Include/GUI_Version.h"
+        },
+        {
+          "name": "bsp:version-assessment-basis",
+          "value": "V6.46 is declared by the accompanying header; precompiled library versions have not been independently verified."
+        },
+        {
+          "name": "bsp:license-review-note",
+          "value": "Agreement referenced by header; complete applicable EULA and distribution terms remain to be checked."
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/emWin_light/Include/GUI_Version.h"
+        }
+      ],
+      "version": "V6.46",
+      "supplier": {
+        "name": "SEGGER Software GmbH"
+      },
+      "licenses": [
+        {
+          "license": {
+            "name": "SEGGER emWin License Agreement"
+          }
+        }
+      ]
+    }
+  ]
+}

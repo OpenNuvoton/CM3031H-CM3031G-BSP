@@ -1,0 +1,61 @@
+{
+  "components": [
+    {
+      "type": "data",
+      "bom-ref": "cm3031:sgl-font-resources",
+      "name": "SGL font resources",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2877624ee219b3c4a94374b3825c6b245ec71365ffc8e11f2befe0dba64461f9"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/sgl/fonts"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "15"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "分别核对代码声明和原始字体资源的来源、许可。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        }
+      ]
+    }
+  ]
+}

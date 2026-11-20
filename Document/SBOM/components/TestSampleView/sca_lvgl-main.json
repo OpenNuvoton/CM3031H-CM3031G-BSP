@@ -1,0 +1,62 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:lvgl-main",
+      "name": "LVGL",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "538c7db8a4846d0c6e96eb401ae6833ff9818a9a47613fc3fcf6c7dd1f130d40"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[\"ThirdParty/lvgl/src/libs/FT800-FT813\", \"ThirdParty/lvgl/src/libs/barcode\", \"ThirdParty/lvgl/src/libs/bin_decoder\", \"ThirdParty/lvgl/src/libs/bmp\", \"ThirdParty/lvgl/src/libs/expat\", \"ThirdParty/lvgl/src/libs/ffmpeg\", \"ThirdParty/lvgl/src/libs/freetype\", \"ThirdParty/lvgl/src/libs/frogfs\", \"ThirdParty/lvgl/src/libs/fsdrv\", \"ThirdParty/lvgl/src/libs/gif\", \"ThirdParty/lvgl/src/libs/gltf\", \"ThirdParty/lvgl/src/libs/gstreamer\", \"ThirdParty/lvgl/src/libs/libjpeg_turbo\", \"ThirdParty/lvgl/src/libs/libpng\", \"ThirdParty/lvgl/src/libs/lodepng\", \"ThirdParty/lvgl/src/libs/lz4\", \"ThirdParty/lvgl/src/libs/qrcode\", \"ThirdParty/lvgl/src/libs/rle\", \"ThirdParty/lvgl/src/libs/rlottie\", \"ThirdParty/lvgl/src/libs/svg\", \"ThirdParty/lvgl/src/libs/thorvg\", \"ThirdParty/lvgl/src/libs/tiny_ttf\", \"ThirdParty/lvgl/src/libs/tjpgd\", \"ThirdParty/lvgl/src/libs/vg_lite_driver\", \"ThirdParty/lvgl/src/stdlib/builtin\", \"ThirdParty/lvgl/src/others/xml\", \"ThirdParty/lvgl/src/drivers/opengles/glad\"]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "930"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "剩余目录仍需核对字体、示例资源和其他内嵌代码。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "ThirdParty/lvgl/lv_version.h"
+        }
+      ],
+      "version": "9.4.0"
+    }
+  ]
+}

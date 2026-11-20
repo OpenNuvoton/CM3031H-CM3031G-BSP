@@ -1,0 +1,233 @@
+{
+  "manifestFormat": "MCU-BSP-SBOM-Manifest",
+  "manifestVersion": "1.0",
+  "serialNumber": "urn:uuid:cd70eff6-ab3d-4a98-9642-108c9873c7d0",
+  "createdAt": "2026-11-19T08:21:19.342731Z",
+  "bsp": {
+    "name": "CM3031H-CM3031G-BSP",
+    "version": "0c94528",
+    "releaseIdentifierSource": "SBOM file name",
+    "gitDescribe": "0c94528"
+  },
+  "sbomPackage": {
+    "name": "MCU BSP SBOM Package",
+    "format": "CycloneDX",
+    "formatVersion": "1.6",
+    "contains": [
+      "Product SBOM",
+      "Test Sample SBOM"
+    ]
+  },
+  "sboms": [
+    {
+      "fileName": "CM3031H-CM3031G-BSP_Product_SBOM_cdx.json",
+      "sbomType": "Product SBOM",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "serialNumber": "urn:uuid:c8fd6c8e-abef-48dd-9060-add0ca6c7caf",
+      "sbomVersion": 2,
+      "generatedTimestamp": "2026-11-19T07:35:16+00:00",
+      "metadataComponent": {
+        "bomRef": "fc2bf900cb7a79ac",
+        "type": "library",
+        "name": "MCU Driver",
+        "version": "0c94528",
+        "properties": [
+          {
+            "name": "bsp:sbom-category",
+            "value": "product"
+          },
+          {
+            "name": "bsp:scope",
+            "value": "Components included in, linked with, deployed to, or reasonably expected to be integrated into final product firmware/software."
+          },
+          {
+            "name": "bsp:scope-policy-file",
+            "value": "product-scope.yaml"
+          },
+          {
+            "name": "bsp:runtime-scope",
+            "value": "true"
+          },
+          {
+            "name": "bsp:included-in-product-firmware",
+            "value": "true"
+          },
+          {
+            "name": "bsp:third-party-components",
+            "value": "none identified in product scope based on the defined Product SBOM scope policy"
+          },
+          {
+            "name": "bsp:product-scope-include-path",
+            "value": "Library/CMSIS"
+          },
+          {
+            "name": "bsp:product-scope-include-path",
+            "value": "Library/CMSIS-DSP"
+          },
+          {
+            "name": "bsp:product-scope-include-path",
+            "value": "Library/Device"
+          },
+          {
+            "name": "bsp:product-scope-include-path",
+            "value": "Library/LlsiYcableLib"
+          },
+          {
+            "name": "bsp:product-scope-include-path",
+            "value": "Library/NuMaker"
+          },
+          {
+            "name": "bsp:product-scope-include-path",
+            "value": "Library/StdDriver"
+          },
+          {
+            "name": "bsp:product-scope-include-path",
+            "value": "Library/UsbHostLib"
+          },
+          {
+            "name": "bsp:product-scope-exclude-path",
+            "value": "Library/CMSIS/Core/Test/"
+          },
+          {
+            "name": "bsp:product-scope-exclude-path",
+            "value": "Library/CMSIS/CoreValidation/"
+          },
+          {
+            "name": "bsp:product-scope-exclude-path",
+            "value": "Document/"
+          },
+          {
+            "name": "bsp:product-scope-exclude-path",
+            "value": "SampleCode/"
+          },
+          {
+            "name": "bsp:product-scope-exclude-path",
+            "value": "ThirdParty/"
+          }
+        ]
+      },
+      "scope": "Components included in, linked with, deployed to, or reasonably expected to be integrated into final product firmware/software.",
+      "isProductRuntimeScope": true,
+      "componentSummary": {
+        "componentCount": 7,
+        "componentCountByType": {
+          "library": 7
+        },
+        "applicationNames": [],
+        "fileComponentCount": 0,
+        "fileComponentWithHashCount": 0
+      },
+      "hash": {
+        "algorithm": "SHA-256",
+        "value": "f5c3cb770dc2c8d26cd6c165cf4ee3e3f41e07b42ea54c727594520887ae7bdc"
+      }
+    },
+    {
+      "fileName": "CM3031H-CM3031G-BSP_TestSample_SBOM_cdx.json",
+      "sbomType": "Test Sample SBOM",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "serialNumber": "urn:uuid:a420cfef-776f-4415-aa20-5da18d95a9c3",
+      "sbomVersion": 4,
+      "generatedTimestamp": "2026-11-19T07:35:17+00:00",
+      "metadataComponent": {
+        "bomRef": "ce3484358bdb0ac3",
+        "type": "application",
+        "name": "MCU Test Sample",
+        "version": "0c94528",
+        "properties": [
+          {
+            "name": "bsp:sbom-category",
+            "value": "test-sample"
+          },
+          {
+            "name": "bsp:scope",
+            "value": "Components used only for examples, demonstrations, validation, host-side utilities, or testing; not included in product runtime unless explicitly integrated by the user."
+          },
+          {
+            "name": "bsp:scope-policy-file",
+            "value": "test-sample-scope.yaml"
+          },
+          {
+            "name": "bsp:runtime-scope",
+            "value": "false"
+          },
+          {
+            "name": "bsp:included-in-product-firmware",
+            "value": "false"
+          },
+          {
+            "name": "bsp:test-sample-scope-include-path",
+            "value": "SampleCode/"
+          },
+          {
+            "name": "bsp:test-sample-scope-include-path",
+            "value": "ThirdParty/"
+          },
+          {
+            "name": "bsp:test-sample-scope-include-path",
+            "value": "Library/CMSIS/Core/Test/"
+          },
+          {
+            "name": "bsp:test-sample-scope-include-path",
+            "value": "Library/CMSIS/CoreValidation/"
+          },
+          {
+            "name": "bsp:test-sample-scope-exclude-path",
+            "value": "Document/"
+          }
+        ]
+      },
+      "scope": "Components used only for examples, demonstrations, validation, host-side utilities, or testing; not included in product runtime unless explicitly integrated by the user.",
+      "isProductRuntimeScope": false,
+      "componentSummary": {
+        "componentCount": 109,
+        "componentCountByType": {
+          "application": 19,
+          "data": 1,
+          "file": 50,
+          "library": 39
+        },
+        "applicationNames": [
+          "CM3031H-CM3031G- SampleCode",
+          "HIDTransferTest_1024",
+          "HIDTransferTest_512",
+          "Lua - The Programming Language",
+          "WDF Coinstaller",
+          "Windows Driver Foundation - User-mode Platform Device Update Co-Installer",
+          "XOMAddr",
+          "dfu-util",
+          "libusb-1.0",
+          "libusb-win32 - DLL",
+          "libusb-win32 - Install-Filter",
+          "libusbK.dll"
+        ],
+        "fileComponentCount": 50,
+        "fileComponentWithHashCount": 50
+      },
+      "hash": {
+        "algorithm": "SHA-256",
+        "value": "9ee6239b6016813c21849b49b35b34fa874417e0ee89e17862e3b762102201d6"
+      },
+      "relationshipToProductSbom": {
+        "usesProductComponents": true,
+        "productSbomFile": "CM3031H-CM3031G-BSP_Product_SBOM_cdx.json",
+        "description": "Test sample firmware may be built using MCU Driver components described in the Product SBOM. These product components are not duplicated in the Test Sample SBOM."
+      }
+    }
+  ],
+  "scopeRule": {
+    "productSbom": "Use as the primary SBOM for product vulnerability assessment and CRA product component transparency.",
+    "testSampleSbom": "Use only when sample, demo, validation, or test-only components are reused, executed, distributed, or integrated by the customer.",
+    "separationRationale": "Product and Test Sample SBOMs are kept separate to avoid treating test/sample utilities as product runtime dependencies."
+  },
+  "customerGuidance": [
+    "Use the Product SBOM as the primary input for product vulnerability assessment.",
+    "Review the Test Sample SBOM only when the corresponding sample/demo/test components are used or redistributed.",
+    "Components in the Test Sample SBOM are not considered product firmware/runtime dependencies unless explicitly integrated by the user."
+  ],
+  "notes": [
+    "This manifest is an index for the SBOM package; it is not a merged CycloneDX BOM."
+  ]
+}

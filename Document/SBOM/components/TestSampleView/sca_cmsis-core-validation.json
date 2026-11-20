@@ -1,0 +1,68 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:cmsis-core-validation",
+      "name": "CMSIS-Core validation",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6da7572ee09fcd7d175d867134c3bdc924f39be2b63840d88f6dbc956a52dc89"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "Library/CMSIS/CoreValidation"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "35"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": ""
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        },
+        {
+          "name": "bsp:identity-evidence",
+          "value": "CMSIS test/validation directory; independent version and directory-wide license assessment pending."
+        }
+      ],
+      "supplier": {
+        "name": "Arm Limited"
+      }
+    }
+  ]
+}

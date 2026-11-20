@@ -1,0 +1,74 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:lvgl-builtin-support",
+      "name": "LVGL built-in allocator and formatting support",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0b6ffab0544a3a7891acde3e2f2f96ae065de061d0332589d1180f8e03260b31"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl/src/stdlib/builtin"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "6"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "包含 TLSF/Printf 线索，后续按文件进一步核对。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "source-based-assessment"
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c; ThirdParty/lvgl/src/stdlib/builtin/lv_tlsf.h"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Based on inspected accompanying source license declarations; full directory, wrapper and resource licensing review remains pending."
+        },
+        {
+          "name": "bsp:license-review-status",
+          "value": "needs-review"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "MIT AND BSD-3-Clause"
+        }
+      ]
+    }
+  ]
+}

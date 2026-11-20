@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:sgl-code",
+      "name": "SGL",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fcf65e6526f19895f571f4132792063ddda06724328e1b08709271541ec6b69b"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/sgl"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[\"ThirdParty/sgl/fonts\"]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "118"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "版本和许可需依据本仓库文件核对。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "source-based-assessment"
+        },
+        {
+          "name": "bsp:license-evidence",
+          "value": "ThirdParty/sgl/components/sgl_timer.c; ThirdParty/sgl/components/sgl_timer.h"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Based on inspected accompanying source license declarations; full directory, wrapper and resource licensing review remains pending."
+        },
+        {
+          "name": "bsp:license-review-status",
+          "value": "needs-review"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "cm3031:lvgl-rle",
+      "name": "LVGL rle",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0733d3b6a6fddf5f90e31b80699c528b2206c6ada2cbeff484a8416ebfbf4622"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bsp:path",
+          "value": "ThirdParty/lvgl/src/libs/rle"
+        },
+        {
+          "name": "bsp:component-origin",
+          "value": "third-party"
+        },
+        {
+          "name": "bsp:source-commit",
+          "value": "0c94528b6c90d6660b9318e48a7e027384be4a1c"
+        },
+        {
+          "name": "bsp:excluded-paths",
+          "value": "[]"
+        },
+        {
+          "name": "bsp:included-file-count",
+          "value": "2"
+        },
+        {
+          "name": "bsp:hash-subject",
+          "value": "sorted directory file manifest"
+        },
+        {
+          "name": "bsp:hash-algorithm",
+          "value": "SHA256 of UTF-8 concatenated BSP-relative path + NUL + lowercase file SHA256 + LF, sorted by path"
+        },
+        {
+          "name": "bsp:license-status",
+          "value": "needs-review"
+        },
+        {
+          "name": "bsp:license-assessment-basis",
+          "value": "Repository declarations only; complete file-level, resource and linked-binary licensing review pending."
+        },
+        {
+          "name": "bsp:component-review-note",
+          "value": "先按实际目录分组；需区分内嵌实现、接口封装和外部依赖。"
+        },
+        {
+          "name": "bsp:version-evidence",
+          "value": "No independent component version established."
+        }
+      ]
+    }
+  ]
+}
